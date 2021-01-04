@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'You have pushed the button this many times:',
+              'button clicks:',
             ),
             Text(
               '${Provider.of<AppProvider>(context).counter}',

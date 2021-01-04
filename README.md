@@ -1,16 +1,29 @@
 # flutter_boilerplate_starter
 
-A new Flutter project.
+Hello all you flutter developers :-)
+
+we at bytabo started this repository to provide a simple basic flutter boilerplate starter, which lets you get started very fast!
+
+Included
+* Router - just add your needed routes
+* Provider - State management with a example app provider
+* Connectivity - with a ready to use connectivity provider
+* a custom written size service - which lets you scale according to screen size automatically
+* Dart Linting with a analysis_options.yaml file
+
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+* install flutter on your machine
+* open a emulator ios or android
+* start the app with ```flutter run```
 
-A few resources to get you started if this is your first Flutter project:
+## Authors
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+bytabo - Digital crew [https://www.bytabo.de](https://www.bytabo.de)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Built With
+
+- Flutter [https://flutter.dev/](https://flutter.dev/)
+- Dart [https://dart.dev/](https://dart.dev/)
