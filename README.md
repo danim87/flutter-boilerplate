@@ -3,14 +3,18 @@
 Hello all you flutter developers :-)
 
 we at bytabo started this repository to provide a simple basic flutter boilerplate starter, which lets you get started very fast!
+All the tools you need, without too much clutter
+* minimalistic
+* best practice
 
 Included
 * Router - just add your needed routes
 * Provider - State management with a example app provider
+* Http - Basic Http Service for REST APIs
+* JSON Serialization - ready to use json serialization for auto generated interfaces
 * Connectivity - with a ready to use connectivity provider
-* a custom written size service - which lets you scale according to screen size automatically
+* Responsive Auto Sizing - which lets you scale height and width according to screen size
 * Dart Linting with a analysis_options.yaml file
-
 
 ## Getting Started
 
@@ -26,7 +30,6 @@ Included
 ## Authors
 
 bytabo - Digital crew [https://www.bytabo.de](https://www.bytabo.de)
-
 
 ## Built With
 
