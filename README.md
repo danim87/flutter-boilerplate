@@ -18,6 +18,11 @@ Included
 * open a emulator ios or android
 * start the app with ```flutter run```
 
+## JSON Serialization
+
+* let it run one time `flutter pub run build_runner build --delete-conflicting-outputs`
+* let it run with watcher `flutter pub run build_runner watch --delete-conflicting-outputs`
+
 ## Authors
 
 bytabo - Digital crew [https://www.bytabo.de](https://www.bytabo.de)
