@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+import 'app.dart';
 import 'widgets/home/home.dart';
 import 'widgets/settings/settings.dart';
 
@@ -9,7 +10,7 @@ abstract class AppRouter {
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(
-          builder: (context) => HomePage(),
+          builder: (context) => BoilerPlateApplication(),
         );
       case '/settings':
         return MaterialPageRoute(
