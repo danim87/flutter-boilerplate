@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class TabBarModel extends ChangeNotifier {
-  final PageController tabController = PageController(initialPage: 0);
+class NavBarProvider extends ChangeNotifier {
+  final PageController navigationController = PageController(initialPage: 0);
   int selectedTabIndex = 0;
 
-  TabBarModel() {}
+  NavBarProvider() {}
 
   void selectTab(int index) {
-    tabController.jumpToPage(index);
-    selectedTabIndex = tabController.page.round();
+    navigationController.jumpToPage(index);
+    selectedTabIndex = navigationController.page.round();
     notifyListeners();
   }
 }
