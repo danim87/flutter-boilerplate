@@ -34,14 +34,14 @@ class NavBarState extends State<NavBar> {
     return [
       NavBarItem(
         index: 0,
-        selectedIndex: Provider.of<TabBarModel>(context).selectedTabIndex,
-        onTap: Provider.of<TabBarModel>(context).selectTab,
+        selectedIndex: Provider.of<NavBarProvider>(context).selectedTabIndex,
+        onTap: Provider.of<NavBarProvider>(context).selectTab,
         text: 'Home'
       ),
       NavBarItem(
         index: 1,
-        selectedIndex: Provider.of<TabBarModel>(context).selectedTabIndex,
-        onTap: Provider.of<TabBarModel>(context).selectTab,
+        selectedIndex: Provider.of<NavBarProvider>(context).selectedTabIndex,
+        onTap: Provider.of<NavBarProvider>(context).selectTab,
         text: 'Settings'
       )
     ];
