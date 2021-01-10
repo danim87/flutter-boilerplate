@@ -27,7 +27,7 @@ class NavBarItem extends StatelessWidget {
           behavior: HitTestBehavior.opaque,
           onTap: () => onTap(index),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               if (iconUrl != null)
                 SvgPicture.network(
