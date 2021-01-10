@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 import 'app.dart';
-import 'widgets/home/home.dart';
-import 'widgets/settings/settings.dart';
+import 'widgets/_screens/home.dart';
+import 'widgets/_screens/settings.dart';
 
 abstract class AppRouter {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -14,7 +14,7 @@ abstract class AppRouter {
         );
       case '/settings':
         return MaterialPageRoute(
-          builder: (context) => SettingsPage(),
+          builder: (context) => SettingsScreen(),
         );
       default:
         return MaterialPageRoute(

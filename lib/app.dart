@@ -6,8 +6,8 @@ import 'package:provider/provider.dart';
 import 'providers/app_provider.dart';
 import 'router.dart';
 import 'services/size_service.dart';
-import 'widgets/home/home.dart';
-import 'widgets/settings/settings.dart';
+import 'widgets/_screens/home.dart';
+import 'widgets/_screens/settings.dart';
 
 class App extends StatelessWidget {
   @override
@@ -43,7 +43,7 @@ class _BoilerPlateApplicationState extends State<BoilerPlateApplication> {
     return Scaffold(
       body: PageView(
         controller: Provider.of<NavBarProvider>(context).navigationController,
-        children: <Widget>[HomePage(), SettingsPage()],
+        children: <Widget>[HomeScreen(), SettingsScreen()],
         physics: NeverScrollableScrollPhysics(),
       ),
       bottomNavigationBar: NavBar(),
