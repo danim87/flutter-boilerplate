@@ -16,8 +16,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    initSizeService(context);
-
     return Scaffold(
       appBar: AppBar(
         title: Text('Home'),
