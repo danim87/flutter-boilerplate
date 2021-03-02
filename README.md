@@ -27,6 +27,10 @@ Included
 * let it run one time `flutter pub run build_runner build --delete-conflicting-outputs`
 * let it run with watcher `flutter pub run build_runner watch --delete-conflicting-outputs`
 
+## App Icons + Splash Screen Creation
+- To generate splash screens, place / update the source file `images/splash.png`, check the key `flutter_native_splash - color` in `pubspec.yaml` (should correspond to the hex background color in the splash screen image) and run `flutter pub run flutter_native_splash:create`
+- To generate app icons, place / update the source files `images/app_icon_round.png` and `images/app_icon_square.png` and run `flutter pub run flutter_launcher_icons:main`
+
 ## Authors
 
 bytabo - Digital crew [https://www.bytabo.de](https://www.bytabo.de)

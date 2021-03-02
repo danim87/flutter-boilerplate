@@ -21,6 +21,8 @@ dev_dependencies:
     sdk: flutter
   build_runner: ^1.10.11
   json_serializable: ^3.5.1
+  flutter_launcher_icons: ^0.8.1
+  flutter_native_splash: ^0.3.0
 
 flutter:
 
@@ -47,3 +49,13 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+flutter_native_splash:
+  image: images/splash.png
+  color: "000000"                           #
+  android_disable_fullscreen: true
+  
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "images/app_icon_square.png"
