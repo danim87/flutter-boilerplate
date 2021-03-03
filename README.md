@@ -15,6 +15,7 @@ Included
 * Connectivity - with a ready to use connectivity provider
 * Responsive Auto Sizing - which lets you scale height and width according to screen size
 * Dart Linting with a analysis_options.yaml file
+* App Icons & Splash Screen - replace the sample source files and generate everything automatically
 
 ## Getting Started
 
