@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'widgets/application_container/application_container.dart';
 
-import 'app.dart';
-import 'widgets/_screens/home.dart';
-import 'widgets/_screens/settings.dart';
+import 'widgets/settings/settings.dart';
 
 abstract class AppRouter {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(
-          builder: (context) => BoilerPlateApplication(),
+          builder: (context) => ApplicationContainer(),
         );
       case '/settings':
         return MaterialPageRoute(
-          builder: (context) => SettingsScreen(),
+          builder: (context) => SettingsPage(),
         );
       default:
         return MaterialPageRoute(

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate_starter/providers/nav_bar_provider.dart';
-import 'package:flutter_boilerplate_starter/widgets/nav_bar/nav_bar.dart';
 import 'package:provider/provider.dart';
 
 import 'providers/app_provider.dart';
+import 'providers/nav_bar_provider.dart';
 import 'router.dart';
 import 'services/size_service.dart';
-import 'widgets/_screens/home.dart';
-import 'widgets/_screens/settings.dart';
+import 'widgets/bottom_nav_bar/bottom_nav_bar.dart';
+import 'widgets/home/home.dart';
+import 'widgets/settings/settings.dart';
 
 class App extends StatelessWidget {
   @override
@@ -26,27 +26,6 @@ class App extends StatelessWidget {
         initialRoute: '/',
         onGenerateRoute: AppRouter.generateRoute,
       ),
-    );
-  }
-}
-
-class BoilerPlateApplication extends StatefulWidget {
-  @override
-  _BoilerPlateApplicationState createState() => _BoilerPlateApplicationState();
-}
-
-class _BoilerPlateApplicationState extends State<BoilerPlateApplication> {
-  @override
-  Widget build(BuildContext context) {
-    initSizeService(context);
-
-    return Scaffold(
-      body: PageView(
-        controller: Provider.of<NavBarProvider>(context).navigationController,
-        children: <Widget>[HomeScreen(), SettingsScreen()],
-        physics: NeverScrollableScrollPhysics(),
-      ),
-      bottomNavigationBar: NavBar(),
     );
   }
 }
