@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../providers/nav_bar_provider.dart';
+import '../../providers/bottom_nav_bar_provider.dart';
 import '../../services/size_service.dart';
 import 'bottom_nav_bar_item.dart';
 
@@ -34,13 +34,13 @@ class BottomNavBarState extends State<BottomNavBar> {
     return [
       NavBarItem(
           index: 0,
-          selectedIndex: Provider.of<NavBarProvider>(context).selectedTabIndex,
-          onTap: Provider.of<NavBarProvider>(context).selectTab,
+          selectedIndex: Provider.of<BottomNavBarProvider>(context).selectedTabIndex,
+          onTap: Provider.of<BottomNavBarProvider>(context).selectTab,
           text: 'Home'),
       NavBarItem(
           index: 1,
-          selectedIndex: Provider.of<NavBarProvider>(context).selectedTabIndex,
-          onTap: Provider.of<NavBarProvider>(context).selectTab,
+          selectedIndex: Provider.of<BottomNavBarProvider>(context).selectedTabIndex,
+          onTap: Provider.of<BottomNavBarProvider>(context).selectTab,
           text: 'Settings')
     ];
   }
