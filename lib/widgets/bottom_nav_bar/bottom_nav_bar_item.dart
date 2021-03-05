@@ -3,14 +3,14 @@ import 'package:flutter_svg/svg.dart';
 
 import '../../services/size_service.dart';
 
-class NavBarItem extends StatelessWidget {
+class BottomNavBarItem extends StatelessWidget {
   final int index;
   final int selectedIndex;
   final Function onTap;
   final String iconUrl;
   final String text;
 
-  const NavBarItem({
+  const BottomNavBarItem({
     @required this.index,
     @required this.selectedIndex,
     @required this.onTap,

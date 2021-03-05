@@ -23,21 +23,21 @@ class BottomNavBarState extends State<BottomNavBar> {
         child: Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: _buildNavBarItems(),
+          children: _buildBottomNavBarItems(),
         ),
       ),
       color: Colors.white,
     );
   }
 
-  List<NavBarItem> _buildNavBarItems() {
+  List<BottomNavBarItem> _buildBottomNavBarItems() {
     return [
-      NavBarItem(
+      BottomNavBarItem(
           index: 0,
           selectedIndex: Provider.of<BottomNavBarProvider>(context).selectedTabIndex,
           onTap: Provider.of<BottomNavBarProvider>(context).selectTab,
           text: 'Home'),
-      NavBarItem(
+      BottomNavBarItem(
           index: 1,
           selectedIndex: Provider.of<BottomNavBarProvider>(context).selectedTabIndex,
           onTap: Provider.of<BottomNavBarProvider>(context).selectTab,
