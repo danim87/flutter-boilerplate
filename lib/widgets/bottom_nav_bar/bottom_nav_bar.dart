@@ -3,14 +3,14 @@ import 'package:provider/provider.dart';
 
 import '../../providers/nav_bar_provider.dart';
 import '../../services/size_service.dart';
-import 'nav_bar_item.dart';
+import 'bottom_nav_bar_item.dart';
 
-class NavBar extends StatefulWidget {
+class BottomNavBar extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => NavBarState();
+  State<StatefulWidget> createState() => BottomNavBarState();
 }
 
-class NavBarState extends State<NavBar> {
+class BottomNavBarState extends State<BottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
@@ -33,17 +33,15 @@ class NavBarState extends State<NavBar> {
   List<NavBarItem> _buildNavBarItems() {
     return [
       NavBarItem(
-        index: 0,
-        selectedIndex: Provider.of<NavBarProvider>(context).selectedTabIndex,
-        onTap: Provider.of<NavBarProvider>(context).selectTab,
-        text: 'Home'
-      ),
+          index: 0,
+          selectedIndex: Provider.of<NavBarProvider>(context).selectedTabIndex,
+          onTap: Provider.of<NavBarProvider>(context).selectTab,
+          text: 'Home'),
       NavBarItem(
-        index: 1,
-        selectedIndex: Provider.of<NavBarProvider>(context).selectedTabIndex,
-        onTap: Provider.of<NavBarProvider>(context).selectTab,
-        text: 'Settings'
-      )
+          index: 1,
+          selectedIndex: Provider.of<NavBarProvider>(context).selectedTabIndex,
+          onTap: Provider.of<NavBarProvider>(context).selectTab,
+          text: 'Settings')
     ];
   }
 }
