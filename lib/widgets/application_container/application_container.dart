@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../providers/bottom_nav_bar_provider.dart';
 import '../../services/size_service.dart';
+import '../../services/size_services/device_size_service.dart';
 import '../bottom_nav_bar/bottom_nav_bar.dart';
 import '../home/home.dart';
 import '../settings/settings.dart';
@@ -12,16 +13,24 @@ class ApplicationContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     initSizeService(context);
 
-    return Scaffold(
-      body: PageView(
-        controller: Provider.of<BottomNavBarProvider>(context).navigationController,
-        children: <Widget>[
-          HomePage(),
-          SettingsPage()
-        ],
-        physics: NeverScrollableScrollPhysics(),
-      ),
-      bottomNavigationBar: BottomNavBar(),
-    );
+    return FutureBuilder(
+        future: DeviceSizeService().isDeviceSizeSet(context),
+        builder: (context, snapshot) {
+          if (snapshot.hasData && snapshot.data == true) {
+            initSizeService(context);
+            
+            return Scaffold(
+              body: PageView(
+                controller: Provider.of<BottomNavBarProvider>(context)
+                    .navigationController,
+                children: <Widget>[HomePage(), SettingsPage()],
+                physics: NeverScrollableScrollPhysics(),
+              ),
+              bottomNavigationBar: BottomNavBar(),
+            );
+          } else {
+            return Container();
+          }
+        });
   }
 }
