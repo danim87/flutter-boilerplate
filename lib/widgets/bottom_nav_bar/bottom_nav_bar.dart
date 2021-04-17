@@ -15,9 +15,9 @@ class BottomNavBarState extends State<BottomNavBar> {
   Widget build(BuildContext context) {
     return BottomAppBar(
       child: Container(
-        height: scaleWidth(80),
+        height: scaleHeight(80),
         padding: EdgeInsets.symmetric(
-          vertical: scaleWidth(7),
+          vertical: scaleHeight(7),
           horizontal: scaleWidth(15),
         ),
         child: Row(
@@ -34,12 +34,14 @@ class BottomNavBarState extends State<BottomNavBar> {
     return [
       BottomNavBarItem(
           index: 0,
-          selectedIndex: Provider.of<BottomNavBarProvider>(context).selectedTabIndex,
+          selectedIndex:
+              Provider.of<BottomNavBarProvider>(context).selectedTabIndex,
           onTap: Provider.of<BottomNavBarProvider>(context).selectTab,
           text: 'Home'),
       BottomNavBarItem(
           index: 1,
-          selectedIndex: Provider.of<BottomNavBarProvider>(context).selectedTabIndex,
+          selectedIndex:
+              Provider.of<BottomNavBarProvider>(context).selectedTabIndex,
           onTap: Provider.of<BottomNavBarProvider>(context).selectTab,
           text: 'Settings')
     ];
