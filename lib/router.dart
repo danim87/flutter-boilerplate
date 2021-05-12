@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'widgets/application_container/application_container.dart';
 
-import 'widgets/home/home.dart';
 import 'widgets/settings/settings.dart';
 
 abstract class AppRouter {
@@ -9,7 +9,7 @@ abstract class AppRouter {
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(
-          builder: (context) => HomePage(),
+          builder: (context) => ApplicationContainer(),
         );
       case '/settings':
         return MaterialPageRoute(
