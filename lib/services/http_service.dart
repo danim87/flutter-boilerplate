@@ -20,29 +20,32 @@ class HttpService {
 
   Future<http.Response> get(String url) async {
     http.Response response = await http.get(
-      url,
+      Uri(path: url),
       headers: getHeaders,
     );
 
     final int statusCode = response.statusCode;
 
-    if (statusCode < 200 || statusCode > 400 || response == null) {
+    if (statusCode < 200 || statusCode > 400) {
       throw Exception('Get error $statusCode');
     }
 
     return response;
   }
 
-  Future<http.Response> post(String url, {Map<String, String> body}) async {
+  Future<http.Response> post(
+    String url, {
+    required Map<String, String> body,
+  }) async {
     http.Response response = await http.post(
-      url,
+      Uri(path:url),
       body: json.encode(body),
       headers: postHeaders,
     );
 
     final int statusCode = response.statusCode;
 
-    if (statusCode < 200 || statusCode > 399 || response == null)
+    if (statusCode < 200 || statusCode > 399)
       throw Exception('Post error $statusCode');
 
     return response;

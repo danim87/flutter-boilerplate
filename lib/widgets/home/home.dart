@@ -5,9 +5,7 @@ import '../../providers/app_provider.dart';
 import '../../services/size_service.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({
-    Key key,
-  }) : super(key: key);
+  const HomePage();
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -34,7 +32,7 @@ class _HomePageState extends State<HomePage> {
               style: Theme.of(context).textTheme.headline4,
             ),
             SizedBox(height: scaleHeight(30)),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () => Navigator.pushNamed(context, '/settings'),
               child: Text(
                 'Settings',
