@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
               style: Theme.of(context).textTheme.headline4,
             ),
             SizedBox(height: scaleHeight(30)),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () => Navigator.pushNamed(context, '/settings'),
               child: Text(
                 'Settings',
