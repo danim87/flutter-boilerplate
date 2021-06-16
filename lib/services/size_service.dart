@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-double width;
-double height;
-double safeAreaHorizontal;
-double safeAreaVertical;
-MediaQueryData mediaQueryData;
+late double width;
+late double height;
+late double safeAreaHorizontal;
+late double safeAreaVertical;
+late MediaQueryData mediaQueryData;
 const int baseHeight = 667; // iPhone SE 2nd Gen Height
 const int baseWidth = 375; // iPhone SE 2nd Gen Width
 

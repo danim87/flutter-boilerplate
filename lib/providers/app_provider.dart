@@ -10,7 +10,7 @@ import '../services/http_service.dart';
 class AppProvider extends ChangeNotifier {
   ConnectivityStatus connectivityStatus = ConnectivityStatus.Offline;
   int counter = 0;
-  Data data;
+  late Data data;
 
   AppProvider() {}
 

@@ -5,9 +5,7 @@ import '../../providers/app_provider.dart';
 import '../../services/size_service.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({
-    Key key,
-  }) : super(key: key);
+  const HomePage();
 
   @override
   _HomePageState createState() => _HomePageState();
