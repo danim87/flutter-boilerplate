@@ -41,5 +41,27 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Die App benötigt diese Berechtigung nicht.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Die App benötigt diese Berechtigung nicht.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Die App benötigt diese Berechtigung nicht.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Die App benötigt diese Berechtigung nicht.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Die App benötigt diese Berechtigung nicht.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Die App benötigt diese Berechtigung nicht.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Die App benötigt diese Berechtigung nicht.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>Die App benötigt diese Berechtigung nicht.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Die App benötigt diese Berechtigung nicht.</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Die App benötigt diese Berechtigung nicht.</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Die App benötigt diese Berechtigung nicht.</string>
 </dict>
 </plist>
