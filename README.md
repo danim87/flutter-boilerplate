@@ -32,6 +32,17 @@ Included
 - To generate splash screens, place / update the source file `images/splash.png`, check the key `flutter_native_splash - color` in `pubspec.yaml` (should correspond to the hex background color in the splash screen image) and run `flutter pub run flutter_native_splash:create`
 - To generate app icons, place / update the source files `images/app_icon_round.png` and `images/app_icon_square.png` and run `flutter pub run flutter_launcher_icons:main`
 
+## Deployment
+
+### iOS
+
+- make sure that `Info.plist` contains the correct native API usage descriptions
+- to be continued
+
+### Android
+
+- to be continued
+
 ## Authors
 
 bytabo - Digital crew [https://www.bytabo.de](https://www.bytabo.de)
